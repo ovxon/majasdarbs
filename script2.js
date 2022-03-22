@@ -16,7 +16,9 @@ while (startwidth <= width){
     ctx.rect(startwidth + 15, startheight + 15, (width / 5) - 40, (height / 5) - 40);
     ctx.stroke();
     ctx.beginPath();
-    ctx.rect(startwidth + 25, startheight + 25, (width / 5) - 55, (height / 5) - 55);
+    ctx.rect(startwidth + 30, startheight + 30, (width / 5) - 70, (height / 5) - 70);
     ctx.stroke();
+    ctx.beginPath();
+    ctx.fillRect(startwidth + 43, startheight + 43, (width / 5) - 95, (height / 5) - 95);
     startwidth = startwidth + width / 5
 }
