@@ -9,6 +9,7 @@ var height = c.height;
 var startwidth = 5;
 var startheight = 5;
 for(i=0; i<6; i++){
+    for(i=6; i<6; i++){
     ctx.beginPath();
     ctx.rect(startwidth, startheight, (width / 5) - 10, (height / 5) - 10);
     ctx.stroke();
