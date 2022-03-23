@@ -1,13 +1,13 @@
 var c = document.getElementById("myCanvas2");
 var ctx = c.getContext("2d");
-var x1 = 0
-var y1 = 0
 var width = c.width;
-var height = c.height;
-for(i=0; i<6; i++){
-    for(u=0; u<6; u++){
-        for(o=0; o<6; o++){
+side =(width / 5) - 1.2 * (width / 100);
+space = width / 100;
+extra = Math.round(side / 8);
+for(v=0; v<5; v++){
+    for(i=0; i<5; i++){
+        for(u=0; u<5; u++){
             ctx.beginPath();
-            ctx.rect((width / 100) * (o + 1) + (width / 100) * o, (height / 100) * (u + 1) + (height / 100) * u, width / 5, height / 5)
+            ctx.rect(space + (side + space) * u + extra * v, space + (space + side) * i + extra * v, side - (extra * v) * 2, side - (extra * v) * 2);
             ctx.stroke();
 }}}
