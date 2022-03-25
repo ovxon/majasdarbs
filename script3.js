@@ -1,8 +1,7 @@
-x = 5;
-var vards = document.getElementById(fname.value);
-var uzvards = document.getElementById(lname.value);
-var vecums = document.getElementById(age.value);
-var dzimums = document.getElementById(gender.value);
-function compileData(vards, uzvards, vecums, dzimums){
-    alert(vards + " " + uzvards + " " + vecums + " " + dzimums)
+function compileData(){
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var age = document.getElementById("age").value;
+
+    alert(fname + " " + lname + ", " + age + ", " + gender)
 }
