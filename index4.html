@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stundas uzdevums</title>
+    <link rel="stylesheet" href="styles4.css">
 </head>
-<body>
+<body class = "content">
     <form>
         <label for="c_width">Cik plata pamatne?</label><br>
         <input type="number" id="c_width" name="c_width"><br>
@@ -19,21 +20,21 @@
         <label for="width">Platums:</label><br>
         <input type="number" id="width" name="width"><br>
         <label for="height">Augstums:</label><br>
-        <input type="number" id="height" name="height"><br>
+        <input type="number" id="height" name="height"><br><br>
         <label for="l_color">Līnijas krāsa:</label><br>
         <input type="color" id="l_color" name="l_color" value="#ff0000"><br>
         <label for="b_color">Fona krāsa:</label><br>
         <input type="color" id="b_color" name="b_color" value="#ff0000"><br>
         <label for="c_color">Canvas fona krāsa:</label><br>
-        <input type="color" id="c_color" name="c_color" value="#ff0000"><br>
+        <input type="color" id="c_color" name="c_color" value="#ff0000"><br><br>
         <input type="checkbox" id="sq" name="sq">
         <label for="sq"> Kvadrāts</label><br><br>
         <input type="checkbox" id="r" name="r">
         <label for="r"> 10 Random vietās</label><br><br>
         <br>
     </form>
-    <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
     <p><button onclick="checkData()">Zīmēt</button></p>
+    <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
     <script src="script4.js"></script>
 </body>
 </html>
