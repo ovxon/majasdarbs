@@ -1,10 +1,11 @@
-function karogs (country, lielums) {
-    var c = document.getElementById("myCanvas");
+function button (size) {
+    var size = 4;
+    var c = document.getElementById("Canvas");
     var ctx = c.getContext("2d");
-    var k = lielums / 4;
-    var v = country.toLowerCase();
+    var k = size / 4;
+    var country = document.querySelector('input[name="country"]:checked').value;
     ctx.clearRect(0,0,250,170);
-    if (v == "bd") {
+    if (country == "bd") {
         ctx.beginPath();
         ctx.fillStyle = "rgb(0, 106, 78)";
         ctx.fillRect(0, 0, 250 * k, 150 * k);
@@ -12,23 +13,33 @@ function karogs (country, lielums) {
         ctx.arc(115 * k, 75 * k, 50 * k, 0, 2 * Math.PI);
         ctx.fill();
        }
-    if (v == "id") {
+    if (country == "id") {
         ctx.beginPath();
         ctx.fillStyle = "rgb(206, 17, 38)";
         ctx.fillRect(0, 0, 250 * k, 84 * k);
         ctx.fillStyle = "white";
         ctx.fillRect(0, 84 * k, 250 * k, 84 * k);
     }
-    if (v == "jp") {
-        ctx.beginPath();
+    if (country == "jp") {
+        ctx.beginPath(); 
         ctx.fillStyle = "white";
         ctx.fillRect(0, 0, 250 * k, 168 * k);
         ctx.fillStyle = "rgb(188, 0, 45)";
         ctx.arc(125 * k, 84 * k, 50 * k, 0, 2 * Math.PI);
         ctx.fill();
     }
-}
-function button() {
-    var country = "", lielums = 0;
-    karogs(country, 4);
+    if (country == "lv") {
+        ctx.beginPath();
+        ctx.fillStyle = "rgb(206, 17, 38)";
+        ctx.fillRect(0, 0, 250 * k, 84 * k);
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 84 * k, 250 * k, 84 * k);
+    }
+    if (country == "ua") {
+        ctx.beginPath();
+        ctx.fillStyle = "rgb(206, 17, 38)";
+        ctx.fillRect(0, 0, 250 * k, 84 * k);
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 84 * k, 250 * k, 84 * k);
+    }
 }
