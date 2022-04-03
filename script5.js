@@ -1,45 +1,50 @@
-function button (size) {
-    var size = 4;
-    var c = document.getElementById("Canvas");
-    var ctx = c.getContext("2d");
-    var k = size / 4;
-    var country = document.querySelector('input[name="country"]:checked').value;
-    ctx.clearRect(0,0,250,170);
-    if (country == "bd") {
-        ctx.beginPath();
-        ctx.fillStyle = "rgb(0, 106, 78)";
-        ctx.fillRect(0, 0, 250 * k, 150 * k);
-        ctx.fillStyle = "rgb(244, 42, 65)";
-        ctx.arc(115 * k, 75 * k, 50 * k, 0, 2 * Math.PI);
-        ctx.fill();
+function karogs (valsts, lielums){
+    var pam = Canvas;
+    var zimejums = pam.getContext("2d");
+    lielums = document.querySelector('input[name="size"]:checked').value;
+    var k = lielums / 4;
+    var v = valsts.toLowerCase();
+    zimejums.clearRect(0,0, pam.width, pam.height);
+    if (bd.checked==true) {
+        zimejums.beginPath();
+        zimejums.fillStyle = "rgb(0, 106, 78)";
+        zimejums.fillRect(0, 0, 250 * k, 150 * k);
+        zimejums.fillStyle = "rgb(244, 42, 65)";
+        zimejums.arc(115 * k, 75 * k, 50 * k, 0, 2 * Math.PI);
+        zimejums.fill();
        }
-    if (country == "id") {
-        ctx.beginPath();
-        ctx.fillStyle = "rgb(206, 17, 38)";
-        ctx.fillRect(0, 0, 250 * k, 84 * k);
-        ctx.fillStyle = "white";
-        ctx.fillRect(0, 84 * k, 250 * k, 84 * k);
+    if (id.checked==true)  {
+        zimejums.beginPath();
+        zimejums.fillStyle = "rgb(206, 17, 38)";
+        zimejums.fillRect(0, 0, 250 * k, 84 * k);
+        zimejums.fillStyle = "white";
+        zimejums.fillRect(0, 84 * k, 250 * k, 84 * k);
     }
-    if (country == "jp") {
-        ctx.beginPath(); 
-        ctx.fillStyle = "white";
-        ctx.fillRect(0, 0, 250 * k, 168 * k);
-        ctx.fillStyle = "rgb(188, 0, 45)";
-        ctx.arc(125 * k, 84 * k, 50 * k, 0, 2 * Math.PI);
-        ctx.fill();
+    if (jp.checked==true)  {
+        zimejums.beginPath();
+        zimejums.fillStyle = "white";
+        zimejums.fillRect(0, 0, 250 * k, 168 * k);
+        zimejums.fillStyle = "rgb(188, 0, 45)";
+        zimejums.arc(125 * k, 84 * k, 50 * k, 0, 2 * Math.PI);
+        zimejums.fill();
     }
-    if (country == "lv") {
-        ctx.beginPath();
-        ctx.fillStyle = "rgb(206, 17, 38)";
-        ctx.fillRect(0, 0, 250 * k, 84 * k);
-        ctx.fillStyle = "white";
-        ctx.fillRect(0, 84 * k, 250 * k, 84 * k);
+    if (lv.checked==true)  {
+      zimejums.beginPath();
+        zimejums.fillStyle = "rgb(140, 8, 12)";
+        zimejums.fillRect(0, 0, 250 * k, 60 * k);
+      zimejums.fillRect(0, 110 * k, 250 * k, 60 * k);
+        zimejums.fillStyle = "white";
+        zimejums.fillRect(0, 55 * k, 250 * k, 60 * k);
     }
-    if (country == "ua") {
-        ctx.beginPath();
-        ctx.fillStyle = "rgb(206, 17, 38)";
-        ctx.fillRect(0, 0, 250 * k, 84 * k);
-        ctx.fillStyle = "white";
-        ctx.fillRect(0, 84 * k, 250 * k, 84 * k);
+    if (ua.checked==true)  {
+        zimejums.beginPath();
+        zimejums.fillStyle = "rgb(0, 91, 187)";
+        zimejums.fillRect(0, 0, 250 * k, 84 * k);
+        zimejums.fillStyle = "rgb(255, 213, 0)";
+        zimejums.fillRect(0, 84 * k, 250 * k, 84 * k);
     }
+}
+function button(){
+    var valsts = "", lielums = 0;
+    karogs("bd", 4);
 }
