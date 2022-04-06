@@ -3,7 +3,7 @@ function karogs (valsts, lielums){
     var zimejums = pam.getContext("2d");
     lielums = document.querySelector('input[name="size"]:checked').value;
     var k = lielums / 4;
-    var v = valsts.toLowerCase();
+    var valsts = valsts.toLowerCase();
     zimejums.clearRect(0,0, pam.width, pam.height);
     if (bd.checked==true) {
         zimejums.beginPath();
@@ -32,9 +32,9 @@ function karogs (valsts, lielums){
       zimejums.beginPath();
         zimejums.fillStyle = "rgb(140, 8, 12)";
         zimejums.fillRect(0, 0, 250 * k, 60 * k);
-      zimejums.fillRect(0, 110 * k, 250 * k, 60 * k);
+        zimejums.fillRect(0, 110 * k, 250 * k, 60 * k);
         zimejums.fillStyle = "white";
-        zimejums.fillRect(0, 55 * k, 250 * k, 60 * k);
+        zimejums.fillRect(0, 60 * k, 250 * k, 50 * k);
     }
     if (ua.checked==true)  {
         zimejums.beginPath();

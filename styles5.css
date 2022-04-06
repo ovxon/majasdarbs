@@ -3,3 +3,8 @@ body {
     font-family: "Verdana";
     font-size: 14px;
 }
+
+.drawing {
+    float: right;
+    margin-left:15px;
+}
