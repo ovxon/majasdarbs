@@ -1,0 +1,26 @@
+#header {
+    width: 100%;
+    background-color: red;
+    height: 30px;
+}
+
+#container {
+    width: 1650px;
+    background-color: #ffcc33;
+    margin: auto;
+}
+#first {
+    width: 800px;
+    float: left;
+    height: 800px;
+    background-color: blue;
+}
+#second {
+    width: 800px;
+    float: left;
+    height: 800px;
+    background-color: green;
+}
+#clear {
+    clear: both;
+}
