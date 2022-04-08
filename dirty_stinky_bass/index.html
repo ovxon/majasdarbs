@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Četrstūri</title>
 </head>
 <body>
     <div id="header"></div>
     <div id="container">
         <div id="first">
-            <canvas id="myCanvas1" width="800" height="800" style="border:1px solid #000000;"></canvas>
+            <h3>Kvadrāts</h3>
+            <canvas id="myCanvas1" width="800" height="800" style="border:1px solid #000000;"></canvas><br>
+            <form>
+                <label for="side">Cik gara mala?</label><br>
+                <input type="number" id="side" name="side"><br>
+                <label for="amount_sq">Cik daudz?</label><br>
+                <input type="number" id="amount_sq" name="amount_sq"><br>
+            </form>
+            <p><button onclick="drawSquare()">Zīmēt kvadrātu</button></p>
         </div>
         <div id="second">
+            <h3>Tainstūris</h3>
             <canvas id="myCanvas2" width="800" height="800" style="border:1px solid #000000;"></canvas>
+            <form>
+                <label for="hor_side">Cik plats?</label><br>
+                <input type="number" id="hor_side" name="hor_side"><br>
+                <label for="vert_side">Cik augsts?</label><br>
+                <input type="number" id="vert_side" name="vert_side"><br>
+                <label for="amount_rect">Cik daudz?</label><br>
+                <input type="number" id="amount_rect" name="amount_rect"><br>
+            </form>
+            <p><button onclick="drawRectangle()">Zīmēt tainstūri</button></p>
         </div>
         <div id="clear"></div>
     </div>
